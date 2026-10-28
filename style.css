@@ -5,3 +5,44 @@ main { position: relative; }
 .entrance main { height: 100vh; min-height: 680px;  border: 1px dashed #8c7667; }
 h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px; }
 .subtitle { text-align: center; font-size: 18px; }
+
+/* Week 5: absolute positioning lets text overlap. */
+.code { position: absolute; white-space: nowrap; font-size: 15px; pointer-events: none; opacity: 0; animation: scatter 4s steps(1) infinite; }
+
+.c1,.c6,.c11,.c16,.c21,.c26 { color: #80634f; }
+.c2,.c7,.c12,.c17,.c22,.c27 { color: #a1846e; }
+.c3,.c8,.c13,.c18,.c23,.c28 { color: #635b54; }
+.c4,.c9,.c14,.c19,.c24,.c29 { color: #9b897e; }
+.c5,.c10,.c15,.c20,.c25,.c30 { color: #55483f; }
+
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+.c1 { top: %; left: %; --angle: deg; --wide: ; --tall: 1.2; animation-duration: 3.10s; animation-delay: -2.2s; }
+.c2 { top: 55%; left: 20%; --angle: 24deg; --wide: 1.7; --tall: 0.75; animation-duration: 4.10s; animation-delay: -4.4s; }
+.c3 { top: 32%; left: 7%; --angle: -28deg; --wide: 0.85; --tall: 1.55; animation-duration: 2.39s; animation-delay: 0.0s; }
+.c4 { top: 70%; left: 30%; --angle: 9deg; --wide: 1.45; --tall: 1; animation-duration: 3.39s; animation-delay: -2.2s; }
+.c5 { top: 80%; left: 55%; --angle: 35deg; --wide: 1; --tall: 1.2; animation-duration: 4.39s; animation-delay: -4.4s; }
+

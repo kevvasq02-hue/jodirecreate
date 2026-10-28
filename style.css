@@ -1,2 +1,7 @@
 { box-sizing: border-box; }
-body { margin: 1; background: #f2e9d8; color: #393632; font-family: "Courier New", monospace; }
+body { margin: 0; background: #f2e9d8; color: #393632; font-family: "Courier New", monospace; }
+header, footer { display: flex; justify-content: space-between; padding: 15px; background: #d7d2c8; color: #735f51; font-size: 12px; }
+main { position: relative; }
+.entrance main { height: 100vh; min-height: 680px;  border: 1px dashed #8c7667; }
+h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px; }
+.subtitle { text-align: center; font-size: 18px; }

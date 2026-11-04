@@ -69,27 +69,29 @@ h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px
 /* :target selects the fragment in the address bar; :has hides the old link. */
 #step2:target, #step3:target, #step4:target, #step5:target { display: block; }
 .button-zone:has(.step:target) .first { display: none; }
-/* Move the entire box after each click */
 
-.button-zone:has(#step2:target) {
+/* Move the entire box when clicking */
+
+body:has(#step2:target) .button-zone {
     top: 5%;
     left: 5%;
 }
 
-.button-zone:has(#step3:target) {
-    top: 60%;
+body:has(#step3:target) .button-zone {
+    top: 55%;
     left: 55%;
 }
 
-.button-zone:has(#step4:target) {
+body:has(#step4:target) .button-zone {
     top: 10%;
     left: 55%;
 }
 
-.button-zone:has(#step5:target) {
+body:has(#step5:target) .button-zone {
     top: 60%;
     left: 10%;
 }
+
 /*  basic two-column grid on page two. */
 .archive-main { padding: 25px; }
 .archive-main h1 { font-size: 38px; text-align: left; }

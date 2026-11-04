@@ -22,7 +22,7 @@ h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px
 .c6 { top: 64%; left: 3%; --angle: -8deg; --wide: 1.3; --tall: 0.75; animation-duration: 2.67s; animation-delay: 0.0s; }
 .c7 { top: 46%; left: 45%; --angle: 17deg; --wide: 1.7; --tall: 1.55; animation-duration: 3.67s; animation-delay: -2.2s; }
 .c8 { top: 22%; left: 50%; --angle: -22deg; --wide: 2.85; --tall: 1; animation-duration: 4.67s; animation-delay: -4.4s; }
-.c9 { top: 35%; left: 35%; --angle: 32deg; --wide: 1.45; --tall: 1.2; animation-duration: 2.96s; animation-delay: 0.0s; }
+.c9 { top: 55%; left: 35%; --angle: 32deg; --wide: 1.45; --tall: 1.2; animation-duration: 2.96s; animation-delay: 0.0s; }
 .c10 { top: 58%; left: 49%; --angle: -15deg; --wide: 1; --tall: 0.75; animation-duration: 3.96s; animation-delay: -2.2s; }
 .c11 { top: 42%; left: 10%; --angle: 5deg; --wide: 1.3; --tall: 1.55; animation-duration: 2.24s; animation-delay: -4.4s; }
 .c12 { top: 76%; left: 7%; --angle: -34deg; --wide: 1.7; --tall: 1; animation-duration: 3.24s; animation-delay: 0.0s; }
@@ -56,7 +56,7 @@ h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px
 .flicker { animation: blinking 2.3s steps(1) infinite; }
 
 /* A simple hyperlink, kept visually separate from the moving text. */
-.button-zone { position: absolute; z-index: 10; top: 39%; left: 31%; width: 38%; height: 29%; background: #f2e9d8; border: 1px solid #80634f; }
+.button-zone { position: absolute; z-index: 10; top: 39%; left: 31%; width: 38%; height: 29%; background: #f2e9d8; border: transparent #80634f; }
 .access-label { margin: 10px; color: #80634f; font-size: 11px; }
 .step { display: none; position: absolute; }
 .step a, .archive a { color: #55483f; background: #f2e9d8; text-decoration: underline; padding: 6px; font-weight: bold; }
@@ -69,7 +69,27 @@ h1 { margin: 24px 0 0; text-align: center; font-size: 60px; letter-spacing: -3px
 /* :target selects the fragment in the address bar; :has hides the old link. */
 #step2:target, #step3:target, #step4:target, #step5:target { display: block; }
 .button-zone:has(.step:target) .first { display: none; }
+/* Move the entire box after each click */
 
+.button-zone:has(#step2:target) {
+    top: 5%;
+    left: 5%;
+}
+
+.button-zone:has(#step3:target) {
+    top: 60%;
+    left: 55%;
+}
+
+.button-zone:has(#step4:target) {
+    top: 10%;
+    left: 55%;
+}
+
+.button-zone:has(#step5:target) {
+    top: 60%;
+    left: 10%;
+}
 /*  basic two-column grid on page two. */
 .archive-main { padding: 25px; }
 .archive-main h1 { font-size: 38px; text-align: left; }
